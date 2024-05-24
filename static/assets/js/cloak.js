@@ -16,8 +16,8 @@ if (!inFrame && !navigator.userAgent.includes("Firefox")) {
         const style = iframe.style
         const link = doc.createElement("link")
 
-        const name = localStorage.getItem("name") || "My Drive - Google Drive";
-        const icon = localStorage.getItem("icon") || "https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_32dp.png";
+        const name = localStorage.getItem("name") || "Google Docs";
+        const icon = localStorage.getItem("icon") || "https://ssl.gstatic.com/docs/doclist/images/mediatype/icon_1_document_x16.png";
         
         doc.title = name;
         link.rel = "icon";
@@ -31,6 +31,6 @@ if (!inFrame && !navigator.userAgent.includes("Firefox")) {
 
         doc.head.appendChild(link);
         doc.body.appendChild(iframe)
-        location.replace("https://google.com")
+        location.replace("https://docs.google.com")
     }
 }
